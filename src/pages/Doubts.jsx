@@ -21,6 +21,7 @@ const handelSubmit=()=>{
         axios.post(`http://localhost:8080/api/doubts/history`,{subject,details})
         .then((res)=>{
             alert(res.data)
+            
         })
         .catch((err)=>{
             console.log(err);
